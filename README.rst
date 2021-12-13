@@ -2,28 +2,28 @@
 Python Package Skeleton Template
 ================================
 
-.. image:: https://github.com/joaomcteixeira/python-project-skeleton/workflows/Tests/badge.svg?branch=master
-    :target: https://github.com/joaomcteixeira/python-project-skeleton/actions?workflow=Tests
+.. image:: https://github.com/bra-fsn/python-project-skeleton/workflows/Tests/badge.svg?branch=master
+    :target: https://github.com/bra-fsn/python-project-skeleton/actions?workflow=Tests
     :alt: Test Status
 
-.. image:: https://github.com/joaomcteixeira/python-project-skeleton/workflows/Package%20Build/badge.svg?branch=master
-    :target: https://github.com/joaomcteixeira/python-project-skeleton/actions?workflow=Package%20Build
+.. image:: https://github.com/bra-fsn/python-project-skeleton/workflows/Package%20Build/badge.svg?branch=master
+    :target: https://github.com/bra-fsn/python-project-skeleton/actions?workflow=Package%20Build
     :alt: Package Build
 
-.. image:: https://codecov.io/gh/joaomcteixeira/python-project-skeleton/branch/master/graph/badge.svg
-    :target: https://codecov.io/gh/joaomcteixeira/python-project-skeleton
+.. image:: https://codecov.io/gh/bra-fsn/python-project-skeleton/branch/master/graph/badge.svg
+    :target: https://codecov.io/gh/bra-fsn/python-project-skeleton
     :alt: Codecov
 
 .. image:: https://img.shields.io/codacy/grade/ae042ac066554bfab398024b0beea6a5/master?label=Codacy
-    :target: https://app.codacy.com/manual/joaomcteixeira/python-project-skeleton/dashboard
+    :target: https://app.codacy.com/manual/bra-fsn/python-project-skeleton/dashboard
     :alt: Codacy
 
 .. image:: https://api.codeclimate.com/v1/badges/d96cc9a1841a819cd4f5/maintainability
-   :target: https://codeclimate.com/github/joaomcteixeira/python-project-skeleton/maintainability
+   :target: https://codeclimate.com/github/bra-fsn/python-project-skeleton/maintainability
    :alt: Maintainability
 
-.. image:: https://img.shields.io/codeclimate/tech-debt/joaomcteixeira/python-project-skeleton
-    :target: https://codeclimate.com/github/joaomcteixeira/python-project-skeleton
+.. image:: https://img.shields.io/codeclimate/tech-debt/bra-fsn/python-project-skeleton
+    :target: https://codeclimate.com/github/bra-fsn/python-project-skeleton
     :alt: Code Climate technical debt
 
 .. image:: https://img.shields.io/readthedocs/python-project-skeleton/latest?label=Read%20the%20Docs
@@ -84,7 +84,7 @@ As usual in any GitHub based project, raise an `issue`_ if you find any bug or r
 Version
 =======
 
-v0.8.1
+v0.0.1
 
 .. _GitHub Actions: https://github.com/features/actions
 .. _PyPI: https://pypi.org
@@ -92,14 +92,14 @@ v0.8.1
 .. _bump2version: https://github.com/c4urself/bump2version
 .. _cookiecutter-pylibrary: https://github.com/ionelmc/cookiecutter-pylibrary
 .. _cookiecutter: https://cookiecutter.readthedocs.io/en/latest/index.html
-.. _discussion: https://github.com/joaomcteixeira/python-project-skeleton/discussions
+.. _discussion: https://github.com/bra-fsn/python-project-skeleton/discussions
 .. _documentation: https://python-project-skeleton.readthedocs.io/
 .. _even for scientific software: https://github.com/MolSSI/cookiecutter-cms
 .. _hypothesis: https://hypothesis.readthedocs.io/en/latest/
 .. _ionel: https://github.com/ionelmc
-.. _issue: https://github.com/joaomcteixeira/python-project-skeleton/issues
-.. _latest branch: https://github.com/joaomcteixeira/python-project-skeleton/tree/latest
-.. _master branch: https://github.com/joaomcteixeira/python-project-skeleton/tree/master
+.. _issue: https://github.com/bra-fsn/python-project-skeleton/issues
+.. _latest branch: https://github.com/bra-fsn/python-project-skeleton/tree/latest
+.. _master branch: https://github.com/bra-fsn/python-project-skeleton/tree/master
 .. _pdb-tools: https://github.com/haddocking/pdb-tools
 .. _project's documentation: https://python-project-skeleton.readthedocs.io/en/latest/index.html
 .. _pytest: https://docs.pytest.org/en/stable/

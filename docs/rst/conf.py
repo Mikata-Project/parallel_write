@@ -48,13 +48,13 @@ project = 'Python-Project-Skeleton'
 year = '2020'
 author = 'Joao MC Teixeira'
 copyright = '{0}, {1}'.format(year, author)
-version = release = '0.8.1'
+version = release = '0.0.1'
 
 pygments_style = 'trac'
 templates_path = ['.']
 extlinks = {
-    'issue': ('https://github.com/joaomcteixeira/python-project-skeleton/issues/%s', '#'),  # noqa: E501
-    'pr': ('https://github.com/joaomcteixeira/python-project-skeleton/pull/%s', 'PR #'),  # noqa: E501
+    'issue': ('https://github.com/bra-fsn/python-project-skeleton/issues/%s', '#'),  # noqa: E501
+    'pr': ('https://github.com/bra-fsn/python-project-skeleton/pull/%s', 'PR #'),  # noqa: E501
     }
 
 # codecov io closes connection if host is accessed too repetitively.
@@ -62,13 +62,13 @@ extlinks = {
 # in the .travis.yml file
 # see https://github.com/codecov/codecov-python/issues/158
 linkcheck_ignore = [
-    r'https://codecov.io/gh/joaomcteixeira/python-project-skeleton/*',
+    r'https://codecov.io/gh/bra-fsn/python-project-skeleton/*',
     ]
 
 html_theme = "sphinx_py3doc_enhanced_theme"
 html_theme_path = [sphinx_py3doc_enhanced_theme.get_html_theme_path()]
 html_theme_options = {
-    'githuburl': 'https://github.com/joaomcteixeira/python-project-skeleton',
+    'githuburl': 'https://github.com/bra-fsn/python-project-skeleton',
     }
 
 html_use_smartypants = True
