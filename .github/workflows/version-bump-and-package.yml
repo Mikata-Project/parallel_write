@@ -32,8 +32,8 @@ jobs:
 
     - name: Setup Git
       run: |
-        git config user.name "joaomcteixeira"
-        git config user.email 'joaomcteixeira@users.noreply.github.com'
+        git config user.name "bra-fsn"
+        git config user.email 'bra-fsn@users.noreply.github.com'
         git remote set-url origin https://x-access-token:${{ secrets.AC_GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
         git checkout "${GITHUB_REF:11}"
 
@@ -77,13 +77,8 @@ jobs:
       run: |
         git push --follow-tags
 
-    - name: Build and publish
-      env:
-        TWINE_USERNAME: ${{ secrets.PYPI_USER }}
-        TWINE_PASSWORD: ${{ secrets.PYPI_PASS }}
-      run: |
-        python setup.py sdist bdist_wheel
-        # note that here testpypi is used instead of the main pypi
-        # because this is a test project
-        # read more at: https://packaging.python.org/tutorials/packaging-projects/
-        twine upload --repository testpypi dist/*
+    - name: Publish distribution to PyPI
+      if: startsWith(github.event.ref, 'refs/tags')
+      uses: pypa/gh-action-pypi-publish@master
+      with:
+        password: ${{ secrets.PYPI_TOKEN }}

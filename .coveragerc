@@ -6,7 +6,7 @@ source =
 [run]
 branch = true
 source =
-    sampleproject
+    parallel_write
 parallel = true
 
 [report]
