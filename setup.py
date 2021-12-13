@@ -24,7 +24,7 @@ long_description = '{}\n{}'.format(
 
 setup(
     name='parallel_write',
-    version='0.0.4',
+    version='0.0.5',
     description='Writes to many open files in parallel.',
     long_description=long_description,
     long_description_content_type='text/x-rst',
