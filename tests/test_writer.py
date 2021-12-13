@@ -14,7 +14,7 @@ import tempfile
 @pytest.fixture
 def random_bytes(size=1024):
     """Return random bytes."""
-    return open("/dev/random", "rb").read(size)
+    return os.urandom(size)
 
 
 @pytest.fixture
