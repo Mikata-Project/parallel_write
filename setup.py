@@ -25,7 +25,7 @@ long_description = '{}\n{}'.format(
 setup(
     name='parallel_write',
     version='0.0.5',
-    description='Writes to many open files in parallel.',
+    description='Writes to many open file objects in parallel.',
     long_description=long_description,
     long_description_content_type='text/x-rst',
     license='MIT License',
@@ -40,24 +40,21 @@ setup(
     classifiers=[
         # complete classifier list:
         # http://pypi.python.org/pypi?%3Aaction=list_classifiers
-        'Development Status :: 3 - Alpha',
+        'Development Status :: 5 - Production/Stable',
         'License :: OSI Approved :: MIT License',
         'Natural Language :: English',
         'Operating System :: POSIX',
-        'Programming Language :: Python :: 3.7',
-        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python',
         ],
     project_urls={
         'webpage': 'https://github.com/Mikata-Project/parallel_write',
-        'Documentation': 'https://python-project-skeleton.readthedocs.io/en/latest/',
+        'Documentation': 'https://parallel-write.readthedocs.io/en/latest/',
         'Changelog': 'https://github.com/Mikata-Project/parallel_write/blob/master/docs/CHANGELOG.rst',
         'Issue Tracker': 'https://github.com/Mikata-Project/parallel_write/issues',
         'Discussion Forum': 'https://github.com/Mikata-Project/parallel_write/discussions',
         },
     keywords=[
-        'ci', 'continuous-integration', 'project-template',
-        'project-skeleton', 'sample-project',
-        # eg: 'keyword1', 'keyword2', 'keyword3',
+        'io', 'parallel', 'distributed', 'multiple'
         ],
     python_requires='>=3.5',
     install_requires=[
