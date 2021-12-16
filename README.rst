@@ -59,7 +59,7 @@ improvements.
 Version
 =======
 
-v0.0.5
+v0.0.6
 
 .. _documentation: https://parallel-write.readthedocs.io/en/latest/
 .. _issue: https://github.com/bra-fsn/python-project-skeleton/issues
