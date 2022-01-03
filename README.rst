@@ -59,7 +59,7 @@ improvements.
 Version
 =======
 
-v0.0.7
+v0.0.8
 
 .. _documentation: https://parallel-write.readthedocs.io/en/latest/
 .. _issue: https://github.com/Mikata-Project/parallel_write/issues
