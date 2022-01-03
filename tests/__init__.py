@@ -1,1 +1,1 @@
-"""Test suite for sampleproject."""
+"""Test suite for parallel_write."""
