@@ -46,7 +46,7 @@ project = 'parallel_write'
 year = '2021'
 author = 'NAGY, Attila'
 copyright = '{0}, {1}'.format(year, author)
-version = release = '0.0.6'
+version = release = '0.0.7'
 
 pygments_style = 'trac'
 templates_path = ['.']
