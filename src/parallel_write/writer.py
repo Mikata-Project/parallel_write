@@ -6,18 +6,22 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 class Writer:
     """Writes to given file handles `files` in parallel."""
 
-    def __init__(self, files, max_workers=None):
+    def __init__(self, files, max_workers=None, ignore_diff=["fileno", "seekable"]):
         """Parallel writer.
 
         files: list of the input file handles to write to.
         max_workers: the maximum number of workers in the threadpool. Defaults
             to the length of `files`.
+        ignore_diff: the list of methods where different results are accepted. The default is
+            `[fileno, seekable]`. Fileno will always differ, seekable may differ when using
+            various protocol implementations.
         """
         if max_workers is None:
             max_workers = len(files)
         self._files = files
         self._executor = ThreadPoolExecutor(max_workers)
         self._iterators = []
+        self._ignore_diff = ignore_diff
 
     def __getattr__(self, attr):
         """Proxy the methods/properties to the underlying file objects."""
@@ -30,7 +34,7 @@ class Writer:
                 futures = {self._executor.submit(getattr(f, attr), *args, **kwargs): f for f in self._files}
                 res = [future.result() for future in as_completed(futures)]
                 # only check methods which must return the same value
-                if attr not in ("fileno",):
+                if attr not in self._ignore_diff:
                     assert res.count(res[0]) == len(res)
                 return res[0]
             return _do
